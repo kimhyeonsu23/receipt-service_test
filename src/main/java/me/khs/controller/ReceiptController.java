@@ -28,6 +28,7 @@ public class ReceiptController {
 	@PostMapping("/createReceipt")
 	public ReceiptDto createReceipt (@RequestBody ReceiptDto receiptDto) {
 		
+		System.out.println("keywordID!!!!!!!!!!!!! : " + receiptDto.getKeywordId());
 		//ReceiptDto receiptDto = new ReceiptDto(shop, userId, date, keywordId, totalPrice);
 		receiptService.createReceipt(receiptDto);
 		return receiptDto;

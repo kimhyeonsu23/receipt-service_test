@@ -21,6 +21,8 @@ public class ReceiptService {
 	
 	public void createReceipt (ReceiptDto receiptDto) {
 		
+		System.out.println("keywordID!!!!!!!!!!!!! : " + receiptDto.getKeywordId());
+		
 		ReceiptEntity receipt = ReceiptEntity.builder()
 				.shop(receiptDto.getShop())
 				.userId(receiptDto.getUserId())
