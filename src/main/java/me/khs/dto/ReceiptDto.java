@@ -14,17 +14,15 @@ public class ReceiptDto {
 	private Long userId;
 	private LocalDate date;
 	private Long keywordId;
-	private int totalPrice;
 	
 	public ReceiptDto() {}
 	
-	public ReceiptDto(String shop, Long userId, LocalDate date, Long keywordId, int totalPrice) { //영수증 등록 dto
+	public ReceiptDto(String shop, Long userId, LocalDate date, Long keywordId) { //영수증 등록 dto
 		
 		this.shop = shop;
 		this.userId = userId;
 		this.date = date;
 		this.keywordId = keywordId;
-		this.totalPrice = totalPrice;
 		
 	}
 

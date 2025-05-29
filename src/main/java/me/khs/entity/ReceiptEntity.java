@@ -28,14 +28,14 @@ public class ReceiptEntity {
 	@Column(name = "shop", length = 50)
 	private String shop;
 	
-	@Column(name = "user_id", nullable = false)
+	@Column(name = "use_id", nullable = false)
 	private Long userId;
 	
-	@Column(name = "total_price", nullable = false)
-	private int totalPrice;
-	
-	@Column(name = "keyword_id", nullable = false)
+	@Column(name = "keyword_id")
 	private Long keywordId;
+
+	@Column(name = "total_price")
+	private Long totalPrice;
 	
 	@Builder.Default
 	@Column(name = "date", nullable = false)
